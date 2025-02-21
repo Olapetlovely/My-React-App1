@@ -3,7 +3,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const ToDoList = () => {
 
-  const [tasks, setTasks] = useState(["Eat", "walk", "sleep"]);
+  const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
 
   function handleInputChange(event) {
