@@ -482,6 +482,10 @@ input[type = "color"] {
   margin-bottom: 20px;
 }
 
+.to-do-list input[type = "text"]:focus {
+  outline: none;
+}
+
 .to-do-list ol {
   padding: 0;
 }
@@ -508,16 +512,6 @@ input[type = "color"] {
   margin-left: 20px;
 }
 
-footer {
-  width: 100%;
-  bottom: 0;
-  border-top: 1px solid hsl(0, 0%, 40%);
-  background-color: hsl(200, 100%, 50%);
-  padding: 20px;
-  text-align: center;
-  color: #1b1444;
-}
-
 /* digital clock */
 .clock-watch-wrapper {
   background-image: url("https://images.pexels.com/photos/707915/pexels-photo-707915.jpeg?auto=compress&cs=tinysrgb&w=400");
@@ -530,7 +524,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px 0;
+  margin: 30px 0 0 0;
 }
 
 .clock-wrapper {
@@ -627,6 +621,17 @@ footer {
   }
 }
 
+footer {
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid hsl(0, 0%, 40%);
+  background-color: hsl(200, 100%, 50%);
+  padding: 20px;
+  text-align: center;
+  color: #1b1444;
+  margin-top: -10px;
+}
+
 
 @media (max-width: 495px) {
   .to-do-list .input-wrapper{
@@ -659,6 +664,7 @@ footer {
   
   .to-do-list li span {
     text-align: left;
+    font-size: 20px;
   }
 
   .clock {
